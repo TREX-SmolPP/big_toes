@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="curly-toes.css">
+    <link rel="stylesheet" href="fonts.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/premium-vector/three-row-vector-illustration-style_717774-5921.jpg?w=740">
+</head>
+<body>
+    <h1 class="roboto-bold">Active player</h1>
+    <div id="players-tab" class="pixelify-sans">
+        <div class="player" id="player-1">PLAYER 1</div>
+        <div class="player" id="player-2">PLAYER 2</div>
+    </div>
+
+    <div id="play-area" class="roboto-medium">
+        <div class="toe_box remove-up remove-left" id="1">X</div>
+        <div class="toe_box remove-up" id="2">X</div>
+        <div class="toe_box remove-up remove-right" id="3">X</div>
+        <div class="toe_box remove-left" id="4">X</div>
+        <div class="toe_box" id="5">X</div>
+        <div class="toe_box remove-right" id="6">X</div>
+        <div class="toe_box remove-down remove-left" id="7">X</div>
+        <div class="toe_box remove-down" id="8">X</div>
+        <div class="toe_box remove-down remove-right" id="9">X</div>
+    </div>
+
+    <dialog id="modal1" >
+        <p class="roboto-bold">Player  Won</p>
+        <button id="reset_btn" class="roboto-medium" onclick="play_again()">Play Again</button>
+    </dialog>
+
+
+    <script src="logic.js"></script>
+</body>
+</html>
